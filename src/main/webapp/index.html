@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Connection Tester</title>
+<!-- JQquery -->
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"
+	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" />
+
+<!-- Custom script -->
+<script src="js/custom_script.js"></script>
+
+</head>
+<body>
+	<div class="container">
+
+		<!-- Titles and description -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page-header">
+					<h1>
+						Connection tester for <strong class="text-primary">GAIA</strong>
+					</h1>
+					<p>
+						<em> A simple utility to test connections for external
+							services. </em>
+					</p>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Service -->
+		<div class="row">
+			<div class="col-md-12">
+			<h4>
+			Current External Dependency service: <span class="text-info" id="EDservice"></span>
+			</h4>
+			</div>
+		</div>
+		
+		<br>
+		
+		<!-- User input -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class='form-inline'>
+					<label for='address'>Host address:</label><input
+						class='form-control' id="addressInput" type="text"><label
+						for='port'>Port:</label><input class='form-control' id="portInput"
+						type="text" value="80">
+					<div class='btn btn-default' id="testButton">Test</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<!-- Output -->
+		<div class="row">
+			<div class="col-md-12" id="hostInfo"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-group" id="resultList"></ul>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
